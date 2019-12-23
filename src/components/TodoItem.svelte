@@ -18,15 +18,13 @@
 </script>
 
 <style>
-  .done1 {
+  .doneTodo {
     text-decoration: line-through;
-  }
-  i.chk{
-      float: left;
   }
 </style>
 
-<span>
-  <input class="chk" type="checkbox" checked={done} on:click={doneToggled} />
-  <input type="text" class:done1={done} bind:value={value} on:change={titleChanged}/>
-</span><br/>
+<div>
+  <input  type="checkbox" checked={done} on:click={doneToggled} />
+  <input type="text" class:doneTodo={done} bind:value={value} on:change={titleChanged}/>
+<br/>
+</div>
